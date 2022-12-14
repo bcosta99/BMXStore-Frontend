@@ -24,7 +24,23 @@ export default function Create() {
         setFiles(event.target.files);
     };
 
-    const fileSubmitHandler = (event) => {
+    const handleSubmit = async (event) => {
+        const productFormData = new FormData();
+        productFormData.append("name", data.name)
+        productFormData.append("category", data.category)
+        productFormData.append("description", data.description)
+        productFormData.append("color", data.color)
+        productFormData.append("stock", data.stock)
+        productFormData.append("price", data.price)
+
+        postProduct(data)
+            .then(r => {
+                console.log(r)
+            })
+            .catch(e => console.log("Error: " + e))
+        navigate("/read");
+
+
         event.preventDefault();
         setFileSize(true);
         setFileUploadProgress(true);
@@ -67,23 +83,6 @@ export default function Create() {
                 console.error('Error while uploading file!', error);
             });
         setFileUploadProgress(false);
-    };
-
-    const handleSubmit = async () => {
-        const productFormData = new FormData();
-        productFormData.append("name", data.name)
-        productFormData.append("category", data.category)
-        productFormData.append("description", data.description)
-        productFormData.append("color", data.color)
-        productFormData.append("stock", data.stock)
-        productFormData.append("price", data.price)
-
-        postProduct(data)
-            .then(r => {
-                console.log(r)
-            })
-            .catch(e => console.log("Error: " + e))
-        navigate("/read");
     }
 
     const handleChange = (event) => {
@@ -120,15 +119,14 @@ export default function Create() {
         <div className="icd1">
             <h2>AÑADIR PRODUCTO</h2>
 
-            <form onSubmit={fileSubmitHandler}>
+            {/*<form onSubmit={fileSubmitHandler}>*/}
+            {/*</form>*/}
+
+            <Form className="icd2" onSubmit={handleSubmit}>
                 <input type="file" multiple onChange={uploadFileHandler}/>
-                <button type='submit'>Upload</button>
                 {!fileSize && <p style={{color: 'red'}}>File size exceeded!!</p>}
                 {fileUploadProgress && <p style={{color: 'red'}}>Uploading File(s)</p>}
                 {fileUploadResponse != null && <p style={{color: 'green'}}>{fileUploadResponse}</p>}
-            </form>
-
-            <Form className="icd2" onSubmit={handleSubmit}>
                 <label>Name</label>
                 <input
                     name="name"
