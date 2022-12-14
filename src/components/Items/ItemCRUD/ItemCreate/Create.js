@@ -118,10 +118,6 @@ export default function Create() {
     return (
         <div className="icd1">
             <h2>AÑADIR PRODUCTO</h2>
-
-            {/*<form onSubmit={fileSubmitHandler}>*/}
-            {/*</form>*/}
-
             <Form className="icd2" onSubmit={handleSubmit}>
                 <input type="file" multiple onChange={uploadFileHandler}/>
                 {!fileSize && <p style={{color: 'red'}}>File size exceeded!!</p>}
