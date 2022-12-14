@@ -1,0 +1,14 @@
+.icd1 {
+    margin: 10%;
+    background-color: gray;
+}
+
+.icd2 {
+    margin: 10%;
+    display: inline-grid;
+}
+
+.icd3 {
+    margin: 5%;
+    display: inline-flex;
+}

@@ -1,0 +1,10 @@
+.sc1 {
+    margin: 20%;
+    display: inline-block;
+    border: 1px black dashed;
+}
+
+.sc2 {
+    margin: 10%;
+    display: inline-flex;
+}

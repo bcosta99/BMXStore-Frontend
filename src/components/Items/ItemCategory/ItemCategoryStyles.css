@@ -1,0 +1,8 @@
+.header {
+    margin-top: 10%;
+}
+
+.main {
+    display: inline-block;
+    border: 1px black dashed;
+}

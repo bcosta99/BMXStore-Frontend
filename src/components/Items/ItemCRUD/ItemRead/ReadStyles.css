@@ -1,0 +1,17 @@
+.r1 {
+    margin: 10%;
+    background-color: gray;
+}
+
+.r2 {
+    margin-top: 15%;
+    display: inline-grid;
+}
+
+.r1bt {
+    display: flex;
+}
+
+.r3 {
+    display: flex;
+}

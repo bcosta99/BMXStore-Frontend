@@ -1,0 +1,13 @@
+.pl1 {
+    margin: 10%;
+    border: 1px black dashed;
+    width: 1250px;
+    display: inline-block;
+}
+
+.pl2 {
+}
+
+.pl3 {
+    display: inline;
+}

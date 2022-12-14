@@ -1,0 +1,29 @@
+.product {
+    display: inline-grid;
+    border: 1px black dashed;
+    width: 250px;
+    height: 225px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.productimg {
+    margin-top: 5%;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    display: inline-grid;
+}
+
+.name {
+
+}
+
+.category {
+
+}
+
+.price {
+
+}
