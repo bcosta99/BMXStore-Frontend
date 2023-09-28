@@ -62,10 +62,3 @@ npm start
 ```
 
 Esto iniciará el servidor de desarrollo y la aplicación estará disponible en http://localhost:3000.
-
-
-## Estructura del Proyecto
-La estructura del proyecto está organizada de la siguiente manera:
-
-components: Componentes reutilizables de React.
-services: Configuración y funciones para realizar peticiones HTTP utilizando Axios.
