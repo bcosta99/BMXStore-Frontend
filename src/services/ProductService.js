@@ -1,7 +1,7 @@
 import axios from "./AxiosConfig";
 
 const getAllProducts = async () => {
-    return await axios.get('/products/')
+    return await axios.get('/products')
 }
 
 const getProductByID = async (id) => {
@@ -12,12 +12,14 @@ const getByCategory = async (category) => {
     return await axios.get(`/products/category/${category}`)
 }
 
-const searchByName = async (name) => {
-    return await axios.get('/products/search/', {params: {name: ""}})
-}
+// const searchByName = async (name) => {
+//     return await axios.get('/products/search/', {params: {name: ""}})
+// }
 
-const postProduct = async (data) => {
-    return await axios.post('/products/', data)
+const postProduct = async (formData, data, requestOptions) => {
+    return await axios.post('/products/', formData, data, {
+        requestOptions
+    })
 }
 
 const updateProduct = async (id, data) => {
@@ -32,7 +34,7 @@ export {
     getAllProducts,
     getProductByID,
     getByCategory,
-    searchByName,
+    // searchByName,
     updateProduct,
     deleteById,
     postProduct

@@ -6,7 +6,6 @@ import {addShopCart} from "../../../services/ShopCartService";
 
 const ItemDetail = () => {
     const [counter, setCounter] = useState(0);
-    const url = 'http://localhost:8080/cart/add';
     const [item, setItem] = useState(null)
     const params = useParams()
     const [data, setData] = useState({
@@ -58,9 +57,9 @@ const ItemDetail = () => {
                         <div className="counter">
                             <h1> Cantidad </h1>
                             <div className="btn__container">
-                                <button className="control__btn" onClick={increase}>+</button>
-                                <span className="counter__output">{counter}</span>
                                 <button className="control__btn" onClick={decrease}>-</button>
+                                <span className="counter__output">{counter}</span>
+                                <button className="control__btn" onClick={increase}>+</button>
                             </div>
                         </div>
 

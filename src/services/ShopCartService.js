@@ -3,7 +3,7 @@ import axios from "./AxiosConfig";
 const getShopCart = async () => {
     const bearerToken = JSON.parse(localStorage.getItem('user')).accessToken;
 
-    const request = await axios.get('/cart/', {
+    const request = await axios.get('/cart', {
         headers: {
             'Authorization': `Bearer ${bearerToken}`
         }

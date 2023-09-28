@@ -9,9 +9,10 @@ const ItemCategory = () => {
     const params = useParams()
 
     useEffect(() => {
-        getByCategory(params.category, setItems)
+        getByCategory(params.category)
             .then(r => {
                 console.log(r)
+                setItems(r.data)
             })
             .catch(e => console.log("Error: " + e))
     }, [])

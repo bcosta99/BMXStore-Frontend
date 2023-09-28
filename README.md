@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+Ecommerce de Productos BMX
+Este es el README del proyecto de Ecommerce de Productos BMX, una aplicación web desarrollada utilizando React.js y Axios para gestionar las peticiones HTTP. Esta plataforma te permite explorar y comprar una amplia gama de productos relacionados con el BMX, desde bicicletas hasta accesorios y ropa.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Requisitos Previos
+Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo e instalarlo desde https://nodejs.org/.
 
-## Available Scripts
+Configuración
+Clona este repositorio en tu máquina local utilizando el siguiente comando:
 
-In the project directory, you can run:
+``` bash
+git clone https://github.com/tuusuario/ecommerce-bmx.git
+```
 
-### `npm start`
+Navega al directorio del proyecto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+``` bash
+cd ecommerce-bmx
+```
 
-### `npm test`
+Instala las dependencias del proyecto utilizando npm o yarn:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` bash
+npm install
+```
 
-### `npm run build`
+o
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` bash
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Crea un archivo .env en el directorio raíz del proyecto y configura la URL de la API de backend (si es necesario):
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+``` bash
+REACT_APP_API_URL=https://api-ejemplo.com/bmx
+```
 
-### `npm run eject`
+Asegúrate de reemplazar https://api-ejemplo.com/bmx con la URL real de tu API de backend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Uso
+Una vez que hayas configurado el proyecto, puedes iniciar la aplicación utilizando el siguiente comando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+``` bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Esto iniciará el servidor de desarrollo y la aplicación estará disponible en http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Funcionalidades
+Exploración de Productos: Los usuarios pueden navegar por una amplia gama de productos de BMX, ver detalles y precios.
 
-## Learn More
+Carrito de Compras: Los usuarios pueden agregar productos al carrito de compras, ver el resumen de la compra y proceder al proceso de pago.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Gestión de Usuario: Los usuarios pueden registrarse, iniciar sesión y gestionar su perfil.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Proceso de Pago: Los usuarios pueden realizar pagos seguros para comprar productos utilizando métodos de pago populares.
 
-### Code Splitting
+Historial de Compras: Los usuarios pueden ver su historial de compras y el estado de sus pedidos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Estructura del Proyecto
+La estructura del proyecto está organizada de la siguiente manera:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src: Contiene los archivos fuente de la aplicación.
+components: Componentes reutilizables de React.
+pages: Páginas de la aplicación.
+services: Configuración y funciones para realizar peticiones HTTP utilizando Axios.
+styles: Estilos globales y hojas de estilo.
+utils: Utilidades y funciones de utilidad.
+Contribución
+Si deseas contribuir a este proyecto, ¡estamos encantados de recibir tus contribuciones! Puedes abrir problemas (issues) o enviar solicitudes de extracción (pull requests) en nuestro repositorio en GitHub.
