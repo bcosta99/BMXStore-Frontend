@@ -14,7 +14,9 @@ function Register() {
 
     const handleSubmit = async () => {
         await AuthService.register(data.username, data.email, data.password);
+        await AuthService.login(data.username, data.password);
         navigate("/home");
+        window.location.reload();
     }
 
     const handleChange = (event) => {

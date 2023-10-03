@@ -9,6 +9,7 @@ const Profile = () => {
     function handleSubmitLogOut() {
         AuthService.logout();
         navigate("/login");
+        window.location.reload();
     }
 
     return (

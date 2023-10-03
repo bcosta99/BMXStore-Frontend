@@ -15,6 +15,7 @@ function Login() {
     const handleSubmit = async () => {
         await AuthService.login(data.username, data.password);
         navigate("/home");
+        window.location.reload();
     }
 
     const handleChange = (event) => {
