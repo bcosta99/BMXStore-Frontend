@@ -53,6 +53,7 @@ const ItemDetail = () => {
                         <h2 className="id22">{item.description}</h2>
                         <h2 className="id23">Color: {item.color}</h2>
                         <h2 className="id24">Stock: {item.stock}</h2>
+                        <h2 className="id25">Precio: {item.price}€</h2>
 
                         <div className="counter">
                             <h1> Cantidad </h1>
@@ -62,7 +63,7 @@ const ItemDetail = () => {
                                 <button className="control__btn" onClick={increase}>+</button>
                             </div>
                         </div>
-
+                        <br></br>
                         <button onClick={handleClick}> Add to Cart</button>
                     </div>
                 </div>

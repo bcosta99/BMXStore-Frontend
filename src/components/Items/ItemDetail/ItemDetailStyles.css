@@ -46,6 +46,13 @@
     display: grid;
 }
 
+.id25 {
+    font-size: 20px;
+    margin-top: 5%;
+    text-align: start;
+    display: grid;
+}
+
 .counter {
     width: 100%;
     display: flex;
